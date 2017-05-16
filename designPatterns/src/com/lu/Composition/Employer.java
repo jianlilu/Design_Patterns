@@ -1,0 +1,30 @@
+package com.lu.Composition;
+
+import java.util.List;
+
+public abstract class Employer {
+	
+	private String name;
+	public List employers;
+	   
+    public void setName(String name) {
+        this.name = name;
+    }
+   
+    public String getName() {
+        return this.name;
+    }
+   
+    public abstract void add(Employer employer);
+   
+    public abstract void delete(Employer employer);
+   
+    public void printInfo() {
+        System.out.println(name);
+    }
+   
+    public List getEmployers() {
+        return this.employers;
+    }
+
+}
